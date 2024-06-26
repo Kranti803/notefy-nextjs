@@ -1,17 +1,18 @@
-import React from "react";
-import Image from "next/image";
-import Logo from "../assets/logo.png";
-import User from "./User";
-import AddCategory from "./AddCategory";
+"use client";
+import React, { useState } from "react";
+import Header from "@/components/Header";
+import SideMenu from "./SideMenu";
+
 const Sidebar = () => {
+  const [nav, setNav] = useState<boolean>(false);
   return (
     <section className="rounded-lg bg-white px-4 py-2">
-      <div className="flex justify-evenly items-center border-b-2 border-gray-300 pb-2">
-        <Image src={Logo} height={40} width={40} alt="logo" />
-        <span className="font- font-semibold text-2xl">Notefy</span>
+      <div className="block md:hidden">
+        <Header nav={nav} setNav={setNav} />
       </div>
-      <User />
-      <AddCategory />
+      <div className="hidden md:block">
+        <SideMenu setNav={setNav} />
+      </div>
     </section>
   );
 };

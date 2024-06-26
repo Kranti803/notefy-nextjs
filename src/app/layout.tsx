@@ -3,7 +3,7 @@ import { Montserrat, Roboto } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import Footer from "@/components/Footer";
-
+import Search from "@/components/Search";
 
 const roboto = Roboto({
   weight: ["400"],
@@ -34,10 +34,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.variable} ${montserrat.variable}`}>
-        <div className="flex gap-x-4 bg-[--primary-color] p-4">
+        <div className="md:flex gap-x-4 bg-[--primary-color] p-4">
           <Sidebar />
           <div className="flex-1 min-h-screen rounded-lg">
-            {children}
+            <Search />
+            <div className="my-4">{children}</div>
             <Footer />
           </div>
         </div>
