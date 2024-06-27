@@ -38,7 +38,7 @@ export default function RootLayout({
           <Sidebar />
           <div className="flex-1 min-h-screen rounded-lg">
             <Search />
-            <div className="my-4">{children}</div>
+            <main className="my-4">{children}</main>
             <Footer />
           </div>
         </div>

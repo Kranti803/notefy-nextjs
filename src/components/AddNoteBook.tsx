@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTitle,
@@ -11,28 +10,28 @@ import {
 import { Input } from "@/components/ui/input";
 import { IoMdAdd } from "react-icons/io";
 
-const AddCategory = () => {
+const AddNoteBook = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
         <Button
           variant="default"
-          className="bg-black text-white w-full flex gap-2 mt-4"
+          className="bg-black text-white w-full flex gap-2 justify-start"
         >
-          Add Category
-          <IoMdAdd size={20} />
+          Add NoteBook
+          <IoMdAdd  />
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Add a new category</DialogTitle>
+          <DialogTitle>Add a new notebook</DialogTitle>
         </DialogHeader>
         <div className="">
           <div className="grid  items-center gap-4">
             <Input
               id="name"
               className="col-span-3"
-              placeholder="Enter category"
+              placeholder="Add new notebook"
             />
           </div>
         </div>
@@ -46,4 +45,4 @@ const AddCategory = () => {
   );
 };
 
-export default AddCategory;
+export default AddNoteBook;

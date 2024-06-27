@@ -76,6 +76,9 @@ const config = {
         montserrat: "var(--font-montserrat)",
         roboto: "var(--font-roboto)",
       },
+      boxShadow:{
+        md:"var(--box-shadow)"
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

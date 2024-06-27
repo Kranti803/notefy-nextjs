@@ -35,9 +35,10 @@
 
     --radius: 0.5rem;
 
-    /* custom colors */
+    /* custom css */
     --primary-color: rgb(243, 246, 253);
     --gray: #6c757d;
+    --box-shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
 
   .dark {

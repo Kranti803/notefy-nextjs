@@ -1,9 +1,21 @@
+import NotesCard from "../components/NotesCard";
+
 export default function Home() {
   return (
-    <main className="">
-      <h1 className="min-h-screen bg-white px-4 py-1 font-montserrat font-semibold rounded-lg">
-        Main Page
+    <div className="min-h-screen bg-white p-4 font-montserrat rounded-lg">
+      <h1 className="pb-4 font-semibold text-lg">
+        All Notes
       </h1>
-    </main>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <NotesCard />
+        <NotesCard />
+        <NotesCard />
+        <NotesCard />
+        <NotesCard />
+        <NotesCard />
+        <NotesCard />
+        <NotesCard />
+      </div>
+    </div>
   );
 }

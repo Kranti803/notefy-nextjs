@@ -17,7 +17,7 @@ import { CiUser } from "react-icons/ci";
 const User = () => {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="flex justify-center items-center mt-4 outline-none">
+      <DropdownMenuTrigger className="flex justify-center items-center outline-none">
         <div className="flex items-center justify-center gap-x-4">
           <Image alt="user_profile" src={user1} height={35} width={35} />
           <span className="text-sm font-montserrat font-semibold">
