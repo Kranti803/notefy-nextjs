@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import Header from "../components/Header";
 import SideMenu from "./SideMenu";
+import Header from './Header';
 
 const Sidebar = () => {
   const [nav, setNav] = useState<boolean>(false);

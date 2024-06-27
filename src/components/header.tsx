@@ -1,5 +1,5 @@
 "use client";
-import React, { Dispatch, useState, SetStateAction } from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import { Button } from "./ui/button";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Image from "next/image";
