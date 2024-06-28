@@ -6,7 +6,7 @@ import Image from "next/image";
 import Logo from "../assets/logo.png";
 import SideMenu from "./SideMenu";
 
-const Header = ({
+const Navbar = ({
   nav,
   setNav,
 }: {
@@ -33,5 +33,4 @@ const Header = ({
     </div>
   );
 };
-
-export default Header;
+export default Navbar;
