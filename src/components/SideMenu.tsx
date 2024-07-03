@@ -38,7 +38,7 @@ const SideMenu = ({
       <WriteNote />
       <NoteBooks />
       <Button onClick={()=>setNav(false)}  variant={"ghost"} className="flex gap-x-2 justify-start w-full font-roboto font-semibold">
-        <Link href={'/FavouriteNotes'} className="flex items-center gap-x-2">Favourite Notes <FaRegHeart /></Link>
+        <Link href={'/favouritenotes'} className="flex items-center gap-x-2">Favourite Notes <FaRegHeart /></Link>
       </Button>
     </div>
   );

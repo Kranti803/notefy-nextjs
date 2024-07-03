@@ -24,7 +24,7 @@ const Navbar = ({
         <Image src={Logo} height={40} width={40} alt="logo" />
       </div>
       <div
-        className={`md:hidden min-h-screen fixed bg-white text-black top-0 left-0 shadow-2xl p-2  ${
+        className={`md:hidden min-h-screen fixed bg-white text-black top-0 left-0 shadow-2xl p-2 z-[99] ${
           nav ? "translate-x-[0%]" : "translate-x-[-150%]"
         } duration-200 ease-linear`}
       >
