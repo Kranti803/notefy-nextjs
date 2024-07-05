@@ -34,14 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.variable} ${montserrat.variable}`}>
-        <div className="md:flex gap-x-4 bg-[--primary-color] p-4">
-          <Sidebar />
-          <div className="flex-1 min-h-screen rounded-lg">
-            <Search />
-            <main className="my-4">{children}</main>
-            <Footer />
-          </div>
-        </div>
+      <main className="my-4">{children}</main>
       </body>
     </html>
   );

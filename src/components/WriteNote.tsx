@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const WriteNote = () => {
   return (
-    <Link href={'/writenotes'} className='font-roboto'>
+    <Link href={'/notes/writenotes'} className='font-roboto'>
       <Button className='w-full flex gap-x-2 justify-start font-semibold' variant={'ghost'}>Write Notes <FaPenFancy /></Button>
     </Link>
   )
