@@ -3,9 +3,8 @@ import React, { useState } from "react";
 import { Input } from "../../../components/ui/input";
 import { Button } from "../../../components/ui/button";
 import { useForm } from "react-hook-form";
-import type { FieldValues } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { writeNotesSchema } from "../../../schemas/writeNotesSchema";
+import { writeNotesSchema,TwriteNotesSchema } from "../../../schemas/writeNotesSchema";
 import FormErrorMessage from "@/components/FormErrorMessage";
 import dynamic from "next/dynamic";
 const Editor = dynamic(()=>import('../../../components/Editor'),{ssr:false});
@@ -20,9 +19,9 @@ const Page = () => {
     formState: { errors, isSubmitting },
     reset,
     setValue,
-  } = useForm({ resolver: zodResolver(writeNotesSchema) });
+  } = useForm<TwriteNotesSchema>({ resolver: zodResolver(writeNotesSchema) });
 
-  const onSubmit = (data: FieldValues) => {
+  const onSubmit = (data: TwriteNotesSchema) => {
     console.log(data);
     reset();
     setContent("");

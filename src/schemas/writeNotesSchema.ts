@@ -5,3 +5,4 @@ export const writeNotesSchema = z.object({
   content: z.string().min(20,"Content must be at least 20 characters long")
 
 });
+export type TwriteNotesSchema = z.infer <typeof writeNotesSchema>

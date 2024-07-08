@@ -44,7 +44,10 @@ const page = () => {
             }
           </div>
           <div>
+            <div>
+          <Link href={'/'} className='text-sm font-roboto flex justify-end text-gray-500 font-semibold pb-2 '>Forgot Password ?</Link>
             <Input placeholder="Enter Password" {...register('password')} className={"mb-2"} />
+            </div>
             {
                 errors.password && <FormErrorMessage message={`${errors.password.message}`}/>
             }
